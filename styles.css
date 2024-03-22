@@ -72,6 +72,14 @@ body {
   transform: rotateY(180deg);
 }
 
+.background-baru-front {
+  background-color: #e3cccf;
+}
+
+.background-baru-back {
+  background-color: #b47880;
+}
+
 .text-container {
   text-align: center;
 }
