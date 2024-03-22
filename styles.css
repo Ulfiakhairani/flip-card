@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #d7e7ff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+      Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+      sans-serif;
+  }
+  
+  .flip-card-container {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 160px;
+  }
+  
+  .flip-card {
+    position: relative;
+    width: 80vw;
+    aspect-ratio: 16/9;
+    perspective: 3200px;
+    cursor: pointer;
+  }
+  
+  .flip-card__front-side,
+  .flip-card__back-side {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 4px 12px 40px 6px rgba(0, 0, 0, 0.09);
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 1s ease-in-out;
+    backface-visibility: hidden;
+  }
+  
+  .front-small,
+  .back-small {
+    font-size: 30px;
+  }
+  
+  .flip-card__front-side {
+    background: whitesmoke;
+    color: gray;
+    transform: rotateY(0deg);
+  }
+  
+  .flip-card__back-side {
+    background: hsl(215.9, 20%, 50%);
+    color: hsl(215.9, 30%, 80%);
+    transform: rotateY(180deg);
+  }
+  
+  .text-container {
+    text-align: center;
+  }
+  
+  .main-text {
+    font-size: 60px;
+  }
+  
+  .additional-text {
+    font-size: 30px;
+    margin-top: 5px;
+  }
+  
+  .flipped .flip-card__front-side {
+    transform: rotateY(-180deg);
+  }
+  
+  .flipped .flip-card__back-side {
+    transform: rotateY(0deg);
+  }
+  
+  .shuffle-button {
+    position: absolute;
+    background-color: blueviolet;
+    border-radius: 12px;
+    padding: 30px 100px;
+    font-size: 40px;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; /* Tambah baris ini */
+  }
+  
