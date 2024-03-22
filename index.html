@@ -1,136 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flip Cards</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <button class="shuffle-button" onclick="shuffleCards()">Acak</button>
-    <div class="flip-card-container">
-      <div class="flip-card" onclick="flipCard(this)">
-        <div class="flip-card__front-side">
-          <div class="text-container">
-            <div class="main-text">Pantai barat</div>
-            <div class="additional-text">
-              (Saya suka berjalan-jalan di sepanjang pantai barat.)
-            </div>
-          </div>
-        </div>
-        <div class="flip-card__back-side">
-          <div class="text-container">
-            <div class="main-text">West coast</div>
-            <div class="additional-text">
-              (I love taking walks along the West coast.)
-            </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flip Cards</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  
+  <div class="flip-card-container">
+    <div class="flip-card" onclick="flipCard(this)">
+      <div class="flip-card__front-side">
+        <div class="text-container">
+          <div class="main-text">Pantai barat</div>
+          <div class="additional-text">
+            (Saya suka berjalan-jalan di sepanjang pantai barat.)
           </div>
         </div>
       </div>
-      <div class="flip-card" onclick="flipCard(this)">
-        <div class="flip-card__front-side">
-          <div class="text-container">
-            <div class="main-text">Kedengarannya menarik</div>
-            <div class="additional-text">
-              (Merencanakan perjalanan darat? Kedengarannya menarik!)
-            </div>
-          </div>
-        </div>
-        <div class="flip-card__back-side">
-          <div class="text-container">
-            <div class="main-text">That sounds exciting!</div>
-            <div class="additional-text">
-              (Planning a road trip? That sounds exciting!)
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="flip-card" onclick="flipCard(this)">
-        <div class="flip-card__front-side">
-          <div class="text-container">
-            <div class="main-text">Sepanjang tahun</div>
-            <div class="additional-text">
-              (Saya menggunakan tabir surya setiap hari, bahkan di musim dingin,
-              sepanjang tahun.)
-            </div>
-          </div>
-        </div>
-        <div class="flip-card__back-side">
-          <div class="text-container">
-            <div class="main-text">The whole year</div>
-            <div class="additional-text">
-              (I wear sunscreen every day, even in winter, the whole year.)
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="flip-card" onclick="flipCard(this)">
-        <div class="flip-card__front-side">
-          <div class="text-container">
-            <div class="main-text">Pulang (ke rumah)</div>
-            <div class="additional-text">
-              (Sudah mulai larut, waktunya pulang kerumah.)
-            </div>
-          </div>
-        </div>
-        <div class="flip-card__back-side">
-          <div class="text-container">
-            <div class="main-text">Get home</div>
-            <div class="additional-text">
-              (It's getting late, time to get home.)
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="flip-card" onclick="flipCard(this)">
-        <div class="flip-card__front-side">
-          <div class="text-container">
-            <div class="main-text">pensiun</div>
-            <div class="additional-text">
-              (Setelah bekerja keras selama bertahun-tahun, akhirnya dia
-              pensiun.)
-            </div>
-          </div>
-        </div>
-        <div class="flip-card__back-side">
-          <div class="text-container">
-            <div class="main-text">retired</div>
-            <div class="additional-text">
-              (After working hard for years, he finally retired.)
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="flip-card" onclick="flipCard(this)">
-        <div class="flip-card__front-side">
-          <div class="text-container">
-            <div class="main-text">X</div>
-            <div class="additional-text">X</div>
-          </div>
-        </div>
-        <div class="flip-card__back-side">
-          <div class="text-container">
-            <div class="main-text">X</div>
-            <div class="additional-text">X</div>
-          </div>
-        </div>
-      </div>
-      <div class="flip-card" onclick="flipCard(this)">
-        <div class="flip-card__front-side">
-          <div class="text-container">
-            <div class="main-text">X</div>
-            <div class="additional-text">X</div>
-          </div>
-        </div>
-        <div class="flip-card__back-side">
-          <div class="text-container">
-            <div class="main-text">X</div>
-            <div class="additional-text">X</div>
+      <div class="flip-card__back-side">
+        <div class="text-container">
+          <div class="main-text">West coast</div>
+          <div class="additional-text">
+            (I love taking walks along the West coast.)
           </div>
         </div>
       </div>
     </div>
+    <div class="flip-card" onclick="flipCard(this)">
+      <div class="flip-card__front-side">
+        <div class="text-container">
+          <div class="main-text">Kedengarannya menarik</div>
+          <div class="additional-text">
+            (Merencanakan perjalanan darat? Kedengarannya menarik!)
+          </div>
+        </div>
+      </div>
+      <div class="flip-card__back-side">
+        <div class="text-container">
+          <div class="main-text">That sounds exciting!</div>
+          <div class="additional-text">
+            (Planning a road trip? That sounds exciting!)
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card" onclick="flipCard(this)">
+      <div class="flip-card__front-side">
+        <div class="text-container">
+          <div class="main-text">Sepanjang tahun</div>
+          <div class="additional-text">
+            (Saya menggunakan tabir surya setiap hari, bahkan di musim dingin,
+            sepanjang tahun.)
+          </div>
+        </div>
+      </div>
+      <div class="flip-card__back-side">
+        <div class="text-container">
+          <div class="main-text">The whole year</div>
+          <div class="additional-text">
+            (I wear sunscreen every day, even in winter, the whole year.)
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card" onclick="flipCard(this)">
+      <div class="flip-card__front-side">
+        <div class="text-container">
+          <div class="main-text">Pulang (ke rumah)</div>
+          <div class="additional-text">
+            (Sudah mulai larut, waktunya pulang kerumah.)
+          </div>
+        </div>
+      </div>
+      <div class="flip-card__back-side">
+        <div class="text-container">
+          <div class="main-text">Get home</div>
+          <div class="additional-text">
+            (It's getting late, time to get home.)
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card" onclick="flipCard(this)">
+      <div class="flip-card__front-side">
+        <div class="text-container">
+          <div class="main-text">Pensiun</div>
+          <div class="additional-text">
+            (Setelah bekerja keras selama bertahun-tahun, akhirnya dia
+            pensiun.)
+          </div>
+        </div>
+      </div>
+      <div class="flip-card__back-side">
+        <div class="text-container">
+          <div class="main-text">Retired</div>
+          <div class="additional-text">
+            (After working hard for years, he finally retired.)
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="shuffle-button" onclick="shuffleCards()">Acak</button>
+  <script src="script.js"></script>
+</body>
 
-    <script src="script.js"></script>
-  </body>
 </html>
